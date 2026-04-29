@@ -26,7 +26,7 @@ Main objectives:
 - Create / assign / update tasks
 
 
-## 🏗️ Tech Stack
+## Tech Stack
 ### Backend
 - Spring Boot
 - Spring Security (JWT)
@@ -36,7 +36,6 @@ Main objectives:
 ### Frontend (planned)
 - React
 - Javascript
-- Task status workflow
 
 ### Role System
 - Admin
@@ -45,7 +44,7 @@ Main objectives:
 - Member
 
 
-## 📄 Documentation
+## Documentation
 
 Project documentation is available in the `/docs` folder:
 
@@ -56,7 +55,7 @@ Project documentation is available in the `/docs` folder:
 - Implementation plan
 
 
-## 📌 Project Status
+## Project Status
 
 Currently in planning & system design phase.
 Upcoming milestones:
@@ -65,6 +64,6 @@ Upcoming milestones:
 - [ ] Implement authentication & workspace module
 
 
-## 👤 Author
+## Author
 
 Built by a Software Engineering student as a portfolio project.
