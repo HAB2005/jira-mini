@@ -215,6 +215,19 @@ Trello-style boards that belong to a project and display tasks.
 
 ---
 
+### `task_statuses`
+
+Lookup table for task status values.
+
+> **Note:** Currently used in the schema. Will be replaced with a `done` boolean field in a future DB update.
+
+| Column | Type        | Description                |
+| ------ | ----------- | -------------------------- |
+| id     | BIGINT PK   | Auto-increment primary key |
+| name   | VARCHAR(50) | TODO / IN_PROGRESS / DONE  |
+
+---
+
 ### `task_priorities`
 
 Lookup table for task priority levels.
