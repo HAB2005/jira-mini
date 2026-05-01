@@ -65,7 +65,9 @@ The backend is organized into the following modules:
 | Module         | Responsibilities                                                                       |
 | -------------- | -------------------------------------------------------------------------------------- |
 | Authentication | Login, Register, JWT handling, Security configuration                                  |
-| User           | System user management, role management                                                |
+| Authorization  | RBAC enforcement, role extraction from JWT, permission checks                          |
+| Infrastructure | Error handling, response wrapper, logging, CORS, pagination                            |
+| User           | System user management, system role management                                         |
 | Workspace      | Workspace creation and membership                                                      |
 | Project        | Project management inside a workspace                                                  |
 | Board          | Trello-style board — displays tasks with assignee, priority, due date, and done status |

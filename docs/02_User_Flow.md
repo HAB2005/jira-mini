@@ -45,7 +45,7 @@ Each flow represents a complete use-case from the user's perspective.
 2. Enters the email of the user to invite
 3. System checks if the email belongs to an existing account
 4. If yes, the user is added to the workspace
-5. If not, the invitation remains pending until registration
+5. If no account found, system returns an error
 
 ### Remove Member
 1. Workspace Owner opens the member list

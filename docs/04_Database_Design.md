@@ -52,9 +52,9 @@ The database is designed to support:
 
 This allows the system to support multiple login providers per user without changing the `users` table.
 
-**Roles are shared between Workspace and Project:**
+**Roles are stored in a central lookup table:**
 
-- `roles` table stores OWNER / PM / MEMBER
+- `roles` table stores all role definitions: ADMIN / OWNER / PM / MEMBER
 - Both `workspace_members` and `project_members` reference the same `roles` table
 - A user can have different roles in different workspaces or projects
 
@@ -68,8 +68,6 @@ This allows the system to support multiple login providers per user without chan
 - `done = false` - task is not yet completed
 - `done = true` - task has been marked as done by the assignee
 - Simple Trello-style completion tracking, no intermediate states
-
-> **Note:** The current schema uses a `task_statuses` lookup table (TODO / IN_PROGRESS / DONE). This will be revised in a future DB update to use a `done` boolean field instead.
 
 **Task priority uses a lookup table (`task_priorities`):**
 
@@ -127,13 +125,13 @@ Stores hashed password for LOCAL provider only.
 
 ### `roles`
 
-Lookup table for roles used in workspace and project membership.
+Lookup table storing all role definitions used across the system.
 
-| Column      | Type         | Description                |
-| ----------- | ------------ | -------------------------- |
-| id          | BIGINT PK    | Auto-increment primary key |
-| name        | VARCHAR(50)  | OWNER / PM / MEMBER        |
-| description | VARCHAR(255) | Optional description       |
+| Column      | Type         | Description                 |
+| ----------- | ------------ | --------------------------- |
+| id          | BIGINT PK    | Auto-increment primary key  |
+| name        | VARCHAR(50)  | ADMIN / OWNER / PM / MEMBER |
+| description | VARCHAR(255) | Optional description        |
 
 ---
 
@@ -217,14 +215,7 @@ Trello-style boards that belong to a project and display tasks.
 
 ### `task_statuses`
 
-Lookup table for task status values.
-
-> **Note:** Currently used in the schema. Will be replaced with a `done` boolean field in a future DB update.
-
-| Column | Type        | Description                |
-| ------ | ----------- | -------------------------- |
-| id     | BIGINT PK   | Auto-increment primary key |
-| name   | VARCHAR(50) | TODO / IN_PROGRESS / DONE  |
+> **Removed from scope.** Task completion is tracked via the `done` boolean field in the `tasks` table instead.
 
 ---
 
@@ -258,8 +249,6 @@ Core table for task management. Each task belongs to a project and optionally a 
 | created_at  | DATETIME     | Record creation time                       |
 | updated_at  | DATETIME     | Last update time                           |
 | deleted_at  | DATETIME     | Soft delete timestamp                      |
-
-> **Note:** Current schema uses `status_id` referencing `task_statuses`. This will be replaced with a `done` boolean field in a future DB update.
 
 ---
 
