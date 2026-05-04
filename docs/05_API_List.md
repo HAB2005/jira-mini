@@ -10,9 +10,9 @@ All requests (except Auth) require `Authorization: Bearer <token>` header.
 
 | Method | Endpoint         | Description                 | Auth Required |
 | ------ | ---------------- | --------------------------- | :-----------: |
-| POST   | `/auth/register` | Register a new account      |      ❌       |
-| POST   | `/auth/login`    | Login and receive JWT token |      ❌       |
-| POST   | `/auth/logout`   | Logout and invalidate token |      ✅       |
+| POST   | `/auth/register` | Register a new account      |      NO       |
+| POST   | `/auth/login`    | Login and receive JWT token |      NO       |
+| POST   | `/auth/logout`   | Logout and invalidate token |      YES      |
 
 ---
 

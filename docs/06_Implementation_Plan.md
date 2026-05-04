@@ -8,20 +8,20 @@ Backend is completed first before moving to frontend integration.
 
 ## Overview
 
-| Phase    | Focus                | Status         |
-| -------- | -------------------- | -------------- |
-| Phase 1  | Project Setup        | ⬜ Not started |
-| Phase 2  | Authentication       | ⬜ Not started |
-| Phase 3  | Infrastructure       | ⬜ Not started |
-| Phase 4  | Authorization        | ⬜ Not started |
-| Phase 5  | User Management      | ⬜ Not started |
-| Phase 6  | Workspace & Members  | ⬜ Not started |
-| Phase 7  | Project & Members    | ⬜ Not started |
-| Phase 8  | Board                | ⬜ Not started |
-| Phase 9  | Task Management      | ⬜ Not started |
-| Phase 10 | Comments             | ⬜ Not started |
-| Phase 11 | Frontend             | ⬜ Not started |
-| Phase 12 | Integration & Polish | ⬜ Not started |
+| Phase    | Focus                | Status      |
+| -------- | -------------------- | ----------- |
+| Phase 1  | Project Setup        | DONE        |
+| Phase 2  | Authentication       | IN PROGRESS |
+| Phase 3  | Infrastructure       | PENDING     |
+| Phase 4  | Authorization        | PENDING     |
+| Phase 5  | User Management      | PENDING     |
+| Phase 6  | Workspace & Members  | PENDING     |
+| Phase 7  | Project & Members    | PENDING     |
+| Phase 8  | Board                | PENDING     |
+| Phase 9  | Task Management      | PENDING     |
+| Phase 10 | Comments             | PENDING     |
+| Phase 11 | Frontend             | PENDING     |
+| Phase 12 | Integration & Polish | PENDING     |
 
 ---
 

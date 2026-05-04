@@ -201,57 +201,57 @@ Core work management module.
 
 # Permission Matrix
 
-> ✅ = Allowed ; ❌ = Not allowed ; 👁 = Read-only
+> YES = Allowed | NO = Not allowed | READ = Read-only
 
 ### Authentication
 
 | Action                    | Admin | Workspace Owner | Project Manager | Member |
 | ------------------------- | :---: | :-------------: | :-------------: | :----: |
-| Register / Login / Logout |  ✅   |       ✅        |       ✅        |   ✅   |
-| Update own profile        |  ✅   |       ✅        |       ✅        |   ✅   |
+| Register / Login / Logout |  YES  |       YES       |       YES       |  YES   |
+| Update own profile        |  YES  |       YES       |       YES       |  YES   |
 
 ### User Management
 
 | Action                       | Admin | Workspace Owner | Project Manager | Member |
 | ---------------------------- | :---: | :-------------: | :-------------: | :----: |
-| View / search / filter users |  ✅   |       ❌        |       ❌        |   ❌   |
-| Change user system roles     |  ✅   |       ❌        |       ❌        |   ❌   |
-| Deactivate user accounts     |  ✅   |       ❌        |       ❌        |   ❌   |
+| View / search / filter users |  YES  |       NO        |       NO        |   NO   |
+| Change user system roles     |  YES  |       NO        |       NO        |   NO   |
+| Deactivate user accounts     |  YES  |       NO        |       NO        |   NO   |
 
 ### Workspace
 
 | Action                            | Admin | Workspace Owner | Project Manager | Member |
 | --------------------------------- | :---: | :-------------: | :-------------: | :----: |
-| Create workspace                  |  ❌   |       ✅        |       ❌        |   ❌   |
-| View workspace                    |   👁   |       ✅        |       ✅        |   ✅   |
-| Invite / remove members           |  ❌   |       ✅        |       ❌        |   ❌   |
-| Promote member to Project Manager |  ❌   |       ✅        |       ❌        |   ❌   |
+| Create workspace                  |  NO   |       YES       |       NO        |   NO   |
+| View workspace                    | READ  |       YES       |       YES       |  YES   |
+| Invite / remove members           |  NO   |       YES       |       NO        |   NO   |
+| Promote member to Project Manager |  NO   |       YES       |       NO        |   NO   |
 
 ### Project
 
 | Action                           | Admin | Workspace Owner | Project Manager | Member |
 | -------------------------------- | :---: | :-------------: | :-------------: | :----: |
-| Create / update / delete project |  ❌   |       ✅        |       ❌        |   ❌   |
-| Manage project members           |  ❌   |       ✅        |       ❌        |   ❌   |
-| View project overview            |   👁   |       ✅        |       ✅        |   ✅   |
+| Create / update / delete project |  NO   |       YES       |       NO        |   NO   |
+| Manage project members           |  NO   |       YES       |       NO        |   NO   |
+| View project overview            | READ  |       YES       |       YES       |  YES   |
 
 ### Board
 
 | Action                | Admin | Workspace Owner | Project Manager | Member |
 | --------------------- | :---: | :-------------: | :-------------: | :----: |
-| Create / delete board |  ❌   |       ✅        |       ✅        |   ❌   |
-| View board            |   👁   |       ✅        |       ✅        |   ✅   |
-| Filter tasks on board |  ❌   |       ✅        |       ✅        |   ✅   |
+| Create / delete board |  NO   |       YES       |       YES       |   NO   |
+| View board            | READ  |       YES       |       YES       |  YES   |
+| Filter tasks on board |  NO   |       YES       |       YES       |  YES   |
 
 ### Task
 
 | Action                         | Admin | Workspace Owner | Project Manager | Member |
 | ------------------------------ | :---: | :-------------: | :-------------: | :----: |
-| View tasks                     |   👁   |       ✅        |       ✅        |   ✅   |
-| Create tasks                   |  ❌   |       ✅        |       ✅        |   ✅   |
-| Edit / delete any task         |  ❌   |       ✅        |       ✅        |   ❌   |
-| Edit / delete own task         |  ❌   |       ✅        |       ✅        |   ✅   |
-| Assign tasks to members        |  ❌   |       ✅        |       ✅        |   ❌   |
-| Set priority / due date        |  ❌   |       ✅        |       ✅        |   ❌   |
-| Mark own task as done / undone |  ❌   |       ✅        |       ✅        |   ✅   |
-| Comment on tasks               |  ❌   |       ✅        |       ✅        |   ✅   |
+| View tasks                     | READ  |       YES       |       YES       |  YES   |
+| Create tasks                   |  NO   |       YES       |       YES       |  YES   |
+| Edit / delete any task         |  NO   |       YES       |       YES       |   NO   |
+| Edit / delete own task         |  NO   |       YES       |       YES       |  YES   |
+| Assign tasks to members        |  NO   |       YES       |       YES       |   NO   |
+| Set priority / due date        |  NO   |       YES       |       YES       |   NO   |
+| Mark own task as done / undone |  NO   |       YES       |       YES       |  YES   |
+| Comment on tasks               |  NO   |       YES       |       YES       |  YES   |
