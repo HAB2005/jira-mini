@@ -32,18 +32,18 @@ Backend is completed first before moving to frontend integration.
 ### Backend
 
 - [x] Initialize Spring Boot project (Maven)
-- [ ] Configure MySQL database connection
-- [ ] Set up JPA / Hibernate
-- [ ] Configure Spring Security (basic setup)
-- [ ] Set up project package structure (`controller`, `service`, `repository`, `model`, `dto`, `config`)
-- [ ] Create MySQL database and run initial schema migration
+- [x] Configure MySQL database connection
+- [x] Set up JPA / Hibernate
+- [x] Configure Spring Security (basic setup)
+- [x] Set up project package structure (`controller`, `service`, `repository`, `model`, `dto`, `config`)
+- [x] Create MySQL database and run initial schema migration
 
 ### Frontend
 
 - [x] Initialize React project with Vite
-- [ ] Install and configure Ant Design
-- [ ] Install Axios
-- [ ] Set up folder structure (`pages`, `components`, `services`, `hooks`, `utils`)
+- [x] Install and configure Ant Design
+- [x] Install Axios
+- [x] Set up folder structure (`pages`, `components`, `services`, `hooks`, `utils`)
 
 ---
 
